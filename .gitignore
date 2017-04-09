@@ -1,5 +1,11 @@
 /bin/
 /out/
-/.classpath
-/.project
-/.idea/
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# IDEA
+*.iml
+.idea/
