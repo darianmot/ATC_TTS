@@ -1,0 +1,15 @@
+group 'fr.enac'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    testCompile 'junit:junit:4.12'
+    compile group: 'de.dfki.mary', name: 'voice-cmu-slt-hsmm', version: '5.2'
+}
