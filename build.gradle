@@ -13,3 +13,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile group: 'de.dfki.mary', name: 'voice-cmu-slt-hsmm', version: '5.2'
 }
+
+task copyDependencies(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}

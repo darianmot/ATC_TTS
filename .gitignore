@@ -3,15 +3,15 @@ bin/
 out/
 gen/
 build/
-*.class
 
 # Eclipse
 .settings/
-.project
-.classpath
 
 
 # IDEA
 *.iml
-.idea/
+.idea/workspace.xml
+.idea/task.xml
+.idea/gradle.xml
+.idea/libraries/*.xml
 .gradle/
