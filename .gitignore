@@ -3,6 +3,7 @@ bin/
 out/
 gen/
 build/
+log/
 
 # Eclipse
 .settings/

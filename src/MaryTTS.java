@@ -1,7 +1,10 @@
 import marytts.LocalMaryInterface;
 import marytts.util.data.audio.MaryAudioUtils;
+import marytts.util.dom.DomUtils;
+import org.w3c.dom.Document;
 import sun.audio.AudioPlayer;
 import javax.sound.sampled.*;
+import java.io.File;
 
 
 public class MaryTTS {
@@ -25,7 +28,11 @@ public class MaryTTS {
         try {
             LocalMaryInterface myinterface = new LocalMaryInterface();
             System.out.println(myinterface.getAvailableVoices());
-            AudioInputStream stream =  myinterface.generateAudio("Hello World");
+
+            File xml = new File("data/test.xml");
+            Document ssml = DomUtils.parseDocument(xml);
+            myinterface.setInputType("SSML");
+            AudioInputStream stream =  myinterface.generateAudio(ssml);
 
 
             AudioFormat format;
