@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3.org/2001/10/synthesis
+                   http://www.w3.org/TR/speech-synthesis/synthesis.xsd"
+         xml:lang="en-US">
+  <prosody rate="+50%"> IBERWORLD 5 2 7 3 <break/> descent level 3 4 0 <break/>no more heading restriction </prosody>
+</speak>
